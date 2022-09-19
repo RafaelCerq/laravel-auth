@@ -13,16 +13,29 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Route::get('/', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+    return view('welcome');
+});
+
+// Route::get('/', function () {
+//     return view('dashboard');
+// })->middleware(['auth'])->name('dashboard');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
+
+Route::get('lang', function () {
+    $lang = session('lang', 'pt-br');
+    if($lang == 'pt-br'){
+      $lang = "en";
+
+    }else{
+      $lang = "pt-br";
+    }
+    session(['lang' => $lang]);
+    return redirect()->back();
+
+})->name('lang');
 
 require __DIR__.'/auth.php';
