@@ -2,6 +2,21 @@
 # PHP 8^
 # Laravel 9^
 
+## 🛠️ Configurações para rodar projeto
+- copy .env.example .env
+- php artisan key:generate
+- Configurar .env
+    - configurações Mysql
+    - configurações E-mail
+    - configurações queue = database;
+- composer install
+- npm install
+- npm run dev
+- npm run build
+- php artisan migrate
+- php artisan storage:link
+
+
 # Processo de criação do projeto:
 - composer create-project --prefer-dist laravel/laravel laravel-auth
 

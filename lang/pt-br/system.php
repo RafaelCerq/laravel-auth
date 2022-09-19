@@ -42,5 +42,11 @@ return [
     "code" => "Código",
     "recovery_code" => "Código Recuperado",
     "enable" => "Habilitar",
-    "disable" => "Desabilitar"
+    "disable" => "Desabilitar",
+    "forgot_your_password_no_problem"=> "Esqueceu sua senha? Sem problemas. Apenas informe seu endereço de e-mail que enviaremos um link que permitirá definir uma nova senha.",
+    "email_password_reset_link"=> "Enviar link para redefinir senha por e-mail",
+    "this_is_a_secure_area_of_the_application"=> "Essa é uma área segura da aplicação. Por favor confirme sua senha antes de continuar.",
+    "resend_verification_email"=> "Reenviar o e-mail de verificação" ,
+    "a_new_verification_link_has_been_sent"=> "Um novo link de verificação foi enviado para seu e-mail",
+    "thanks_for_signing_up_before_getting_started"=> "Obrigado por inscrever-se! Antes de começar, você poderia verificar seu endereço de e-mail clicando no link que acabamos de enviar para você? Se você não recebeu o e-mail, teremos o prazer de lhe enviar outro.",
 ];
