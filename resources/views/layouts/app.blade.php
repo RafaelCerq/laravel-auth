@@ -2,67 +2,105 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
+        {{-- <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap"> --}}
 
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
 
-        <!-- Themefisher Icon font -->
-        <link rel="stylesheet" href="{{asset('plugins/themefisher-font/style.css')}}">
-        <!-- bootstrap.min css -->
+        <!-- Template CSS Files
+        ================================================== -->
+        <!-- Twitter Bootstrs CSS -->
         <link rel="stylesheet" href="{{asset('plugins/bootstrap/bootstrap.min.css')}}">
-        <!-- Lightbox.min css -->
-        <link rel="stylesheet" href="{{asset('plugins/lightbox2/css/lightbox.min.css')}}">
-        <!-- animation css -->
-        <link rel="stylesheet" href="{{asset('plugins/animate/animate.css')}}">
-        <!-- Slick Carousel -->
+        <!-- Ionicons Fonts Css -->
+        <link rel="stylesheet" href="{{asset('plugins/ionicons/ionicons.min.css')}}">
+        <!-- animate css -->
+        <link rel="stylesheet" href="{{asset('plugins/animate-css/animate.css')}}">
+        <!-- Hero area slider css-->
+        <link rel="stylesheet" href="{{asset('plugins/slider/slider.css')}}">
+        <!-- slick slider -->
         <link rel="stylesheet" href="{{asset('plugins/slick/slick.css')}}">
-        <!-- Main Stylesheet -->
+        <!-- Fancybox -->
+        <link rel="stylesheet" href="{{asset('plugins/facncybox/jquery.fancybox.css')}}">
+        <!-- hover -->
+        <link rel="stylesheet" href="{{asset('plugins/hover/hover-min.css')}}">
+        <!-- template main css file -->
         <link rel="stylesheet" href="{{asset('css/style.css')}}">
     </head>
     <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100">
+        <header class="navigation fixed-top">
             @include('layouts.navigation')
+        </header>
 
-            <!-- Page Heading -->
-            <header class="bg-white shadow">
-                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                    {{ $header }}
+        <main class="py-4">
+            @yield('content')
+        </main>
+
+        <!--
+        ==================================================
+        Footer Section Start
+        ================================================== -->
+        <footer id="footer">
+            <div class="container">
+                <div class="row content-justify-between">
+                    <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+                        <p class="copyright">Copyright: Design and Developed by <a href="http://www.Themefisher.com" target="_blank">Themefisher</a>. <br>
+                            Get More Bootstrap Template From Our
+                            <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank">Store</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <!-- Social Media -->
+                        <ul class="social text-center text-md-right text-lg-right">
+                            <li>
+                                <a href="http://wwww.fb.com/themefisher" class="Facebook">
+                                    <i class="ion-social-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://wwww.twitter.com/themefisher" class="Twitter">
+                                    <i class="ion-social-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="Linkedin">
+                                    <i class="ion-social-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://wwww.fb.com/themefisher" class="Google Plus">
+                                    <i class="ion-social-googleplus"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </header>
+            </div>
+        </footer> <!-- /#footer -->
 
-            <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
-        </div>
-
-        <!-- Main jQuery -->
-        <script src="{{asset('plugins/jquery/jquery.min.js')}}"></script>
-
-        <!-- Bootstrap4 -->
-        <script src="{{asset('plugins/bootstrap/bootstrap.min.js')}}"></script>
-        <!-- Parallax -->
-        <script src="{{asset('plugins/parallax/jquery.parallax-1.1.3.js')}}"></script>
-        <!-- lightbox -->
-        <script src="{{asset('plugins/lightbox2/js/lightbox.min.js')}}"></script>
-        <!-- Owl Carousel -->
+        <!-- Template Javascript Files
+        ================================================== -->
+        <!-- jquery -->
+        <script src="{{asset('plugins/jQurey/jquery.min.js')}}"></script>
+        <!-- Form Validation -->
+        <script src="{{asset('plugins/form-validation/jquery.form.js')}}"></script>
+        <script src="{{asset('plugins/form-validation/jquery.validate.min.js')}}"></script>
+        <!-- slick slider -->
         <script src="{{asset('plugins/slick/slick.min.js')}}"></script>
-        <!-- filter -->
-        <script src="{{asset('plugins/filterizr/jquery.filterizr.min.js')}}"></script>
-        <!-- Smooth Scroll js -->
-        <script src="{{asset('plugins/smooth-scroll/smooth-scroll.min.js')}}"></script>
-        <!-- Google Map -->
-        {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"></script> --}}
-        <script src="{{asset('plugins/google-map/gmap.js')}}"></script>
-
-        <!-- Custom js -->
-        <script src="js/script.js"></script>
+        <!-- bootstrap js -->
+        <script src="{{asset('plugins/bootstrap/bootstrap.min.js')}}"></script>
+        <!-- wow js -->
+        <script src="{{asset('plugins/wow-js/wow.min.js')}}"></script>
+        <!-- slider js -->
+        <script src="{{asset('plugins/slider/slider.js')}}"></script>
+        <!-- Fancybox -->
+        <script src="{{asset('plugins/facncybox/jquery.fancybox.js')}}"></script>
+        <!-- template main js -->
+        <script src="{{asset('js/main.js')}}"></script>
     </body>
 </html>

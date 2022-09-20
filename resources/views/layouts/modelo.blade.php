@@ -7,589 +7,508 @@
  // GITHUB: https://github.com/themefisher/
 -->
 
-<html lang="en">
-<head>
+<html class="no-js">
+    <head>
+        <!-- Basic Page Needs
+        ================================================== -->
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="icon" href="favicon.ico">
+        <title>Timer Agency Template</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Basic Page Needs
-  ================================================== -->
-  <meta charset="utf-8">
-  <title>Bingo | Responsive Multipurpose Parallax HTML5 Template</title>
 
-  <!-- Mobile Specific Metas
-  ================================================== -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="One page parallax responsive HTML Template">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <meta name="author" content="Themefisher">
-  <meta name="generator" content="Themefisher Bingo HTML Template v1.0">
+        <!-- Template CSS Files
+        ================================================== -->
+        <!-- Twitter Bootstrs CSS -->
+        <link rel="stylesheet" href="{{asset('plugins/bootstrap/bootstrap.min.css')}}">
+        <!-- Ionicons Fonts Css -->
+        <link rel="stylesheet" href="{{asset('plugins/ionicons/ionicons.min.css')}}">
+        <!-- animate css -->
+        <link rel="stylesheet" href="{{asset('plugins/animate-css/animate.css')}}">
+        <!-- Hero area slider css-->
+        <link rel="stylesheet" href="{{asset('plugins/slider/slider.css')}}">
+        <!-- slick slider -->
+        <link rel="stylesheet" href="{{asset('plugins/slick/slick.css')}}">
+        <!-- Fancybox -->
+        <link rel="stylesheet" href="{{asset('plugins/facncybox/jquery.fancybox.css')}}">
+        <!-- hover -->
+        <link rel="stylesheet" href="{{asset('plugins/hover/hover-min.css')}}">
+        <!-- template main css file -->
+        <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    </head>
+    <body>
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
-
-  <!-- CSS
-  ================================================== -->
-  <!-- Themefisher Icon font -->
-  <link rel="stylesheet" href="plugins/themefisher-font/style.css">
-  <!-- bootstrap.min css -->
-  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-  <!-- Lightbox.min css -->
-  <link rel="stylesheet" href="plugins/lightbox2/css/lightbox.min.css">
-  <!-- animation css -->
-  <link rel="stylesheet" href="plugins/animate/animate.css">
-  <!-- Slick Carousel -->
-  <link rel="stylesheet" href="plugins/slick/slick.css">
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
-
-</head>
-<body id="body">
-
-    <!--
-    Start Preloader
-    ==================================== -->
-    <div id="preloader">
-        <div class='preloader'>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        </div>
-    </div>
-    <!--
-    End Preloader
-    ==================================== -->
-
-    <!--
-    Fixed Navigation
-    ==================================== -->
-    <header class="navigation fixed-top">
-        <div class="container">
-            <!-- main nav -->
-            <nav class="navbar navbar-expand-lg navbar-light px-0">
-            <!-- logo -->
-            <a class="navbar-brand logo" href="index.html">
-                <img loading="lazy" class="logo-default" src="images/logo.png" alt="logo" />
-                <img loading="lazy" class="logo-white" src="images/logo-white.png" alt="logo" />
-            </a>
-            <!-- /logo -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-                aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navigation">
-                <ul class="navbar-nav ml-auto text-center">
-                <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Homepage <i class="tf-ion-chevron-down"></i>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="index.html">Homepage</a></li>
-                    <li><a class="dropdown-item" href="onepage-slider.html">Onepage</a></li>
-                    <li><a class="dropdown-item" href="onepage-text.html">Onepage 2</a></li>
-
-                    <li class="dropdown dropdown-submenu dropright">
-                        <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0501" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu  <i class="tf-ion-chevron-down"></i></a>
-
-                        <ul class="dropdown-menu" aria-labelledby="dropdown0501">
-                        <li><a class="dropdown-item" href="index.html">Submenu 01</a></li>
-                        <li><a class="dropdown-item" href="index.html">Submenu 02</a></li>
-                        </ul>
-                    </li>
-                    </ul>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="about.html">About Us</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="service.html">Services</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="team.html">Team</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="pricing.html">Pricing</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown02" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Pages <i class="tf-ion-chevron-down"></i>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown02">
-                    <li><a class="dropdown-item" href="404.html">404 Page</a></li>
-                    <li><a class="dropdown-item" href="blog.html">Blog Page</a></li>
-                    <li><a class="dropdown-item" href="single-post.html">Blog Single Page</a></li>
-
-                    <li class="dropdown dropdown-submenu dropleft">
-                        <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0201" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu  <i class="tf-ion-chevron-down"></i></a>
-
-                        <ul class="dropdown-menu" aria-labelledby="dropdown0201">
-                        <li><a class="dropdown-item" href="index.html">Submenu 01</a></li>
-                        <li><a class="dropdown-item" href="index.html">Submenu 02</a></li>
-                        </ul>
-                    </li>
-                    </ul>
-                </li>
-                </ul>
-            </div>
-            </nav>
-            <!-- /main nav -->
-        </div>
-    </header>
-    <!--
-    End Fixed Navigation
-    ==================================== -->
-
-    <div class="hero-slider">
-        <div class="slider-item th-fullpage hero-area" style="background-image: url(images/slider/slider-bg-1.jpg);">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h1 data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">Crafting Digital <br>
-                            Experience</h1>
-                        <p data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".5">Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit. Quod, <br> veritatis tempore nostrum id
-                            officia quaerat eum corrupti, <br> ipsa aliquam velit.</p>
-                        <a data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".8" class="btn btn-main"
-                            href="service.html">Explore Us</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="slider-item th-fullpage hero-area" style="background-image: url(images/slider/slider-bg-2.jpg);">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h1 data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".1">We Combine Design <br> and
-                            Creativity</h1>
-                        <p data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".5">Create just what you need
-                            for your Perfect Website. Choose from a wide range
-                            <br> of Elements & simply put them on our Canvas.</p>
-                        <a data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".8" class="btn btn-main"
-                            href="service.html">Explore Us</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--
-    Start About Section
-    ==================================== -->
-    <section class="service-2 section">
-        <div class="container">
-            <div class="row justify-content-center">
-
-            <div class="col-lg-6">
-                <!-- section title -->
-                <div class="title text-center">
-                <h2>What Do We Offer</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Voluptates, earum. </p>
-                <div class="border"></div>
-                </div>
-                <!-- /section title -->
-            </div>
-            </div>
-            <div class="row">
-
-            <div class="col-md-4 text-center d-none d-md-block">
-                <img loading="lazy" src="images/about/member.jpg" class="img-fluid inline-block" alt="">
-            </div>
-            <div class="col-md-8">
-                <div class="row text-center">
-                <div class="col-md-6 col-sm-6">
-                    <div class="service-item">
-                    <i class="tf-ion-ios-alarm-outline"></i>
-                    <h4>Time Management</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis.</p>
-                    </div>
-                </div><!-- END COL -->
-                <div class="col-md-6 col-sm-6">
-                    <div class="service-item">
-                    <i class="tf-ion-ios-briefcase-outline"></i>
-                    <h4>Marketing Ideas</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis.</p>
-                    </div>
-                </div><!-- END COL -->
-                <div class="col-md-6 col-sm-6">
-                    <div class="service-item">
-                    <i class="tf-ion-ios-email-outline"></i>
-                    <h4>Mail Support</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis.</p>
-                    </div>
-                </div><!-- END COL -->
-                <div class="col-md-6 col-sm-6">
-                    <div class="service-item">
-                    <i class="tf-ion-ios-locked-outline"></i>
-                    <h4>Secure System</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis.</p>
-                    </div>
-                </div><!-- END COL -->
-                </div>
-            </div>
-            </div> <!-- End row -->
-        </div> <!-- End container -->
-    </section> <!-- End section -->
-
-    <!-- Start About Section
-    ==================================== -->
-    <section class="about-2 section" id="about">
-        <div class="container">
-            <div class="row justify-content-center">
-                <!-- section title -->
-                <div class="col-lg-6">
-                    <div class="title text-center">
-                        <h2>We Are Bingo Agency</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam reprehenderit accusamus labore iusto,
-                            aut, eum itaque illo totam tempora eius.</p>
-                        <div class="border"></div>
-                    </div>
-                </div>
-                <!-- /section title -->
-            </div>
-
-            <div class="row">
-
-                <div class="col-md-6 mb-4 mb-md-0">
-                    <img loading="lazy" src="images/about/about-2.png" class="img-fluid" alt="">
-                </div>
-                <div class="col-md-6">
-                    <ul class="checklist">
-                        <li>Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem laca quam venenatis vestibulum.</li>
-                        <li>Aenean quam. Pellentesque ornare sem laca quam venenatis vestibulum.</li>
-                        <li>Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem laca quam venenatis vestibulum.</li>
-                        <li>Etiam porta sem multipage evint landing magna mollis euismod a pharetra augue.</li>
-                        <li>Aenean quam. Pellentesque ornare sem laca quam venenatis vestibulum.</li>
-                    </ul>
-                    <a href="about.html" class="btn btn-main mt-20">Learn More</a>
-                </div>
-            </div> <!-- End row -->
-        </div> <!-- End container -->
-    </section> <!-- End section -->
-
-    <!--
-    Start Call To Action
-    ==================================== -->
-    <section class="call-to-action section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6 col-lg-8 text-center">
-                    <h2>Let's Create Something Together</h2>
-                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, nisi elit consequat ipsum,
-                        nesagittis sem nid elit. Duis sed odio sitain elit.</p>
-                    <a href="contact.html" class="btn btn-main">Contact Us</a>
-                </div>
-            </div> <!-- End row -->
-        </div> <!-- End container -->
-    </section> <!-- End section -->
-
-    <!--
-    Start Counter Section
-    ==================================== -->
-    <section class="counter-wrapper section-sm">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6 col-lg-8 text-center">
-                    <div class="title">
-                        <h2>Award-Winning Agency</h2>
-                        <p>Vestibulum nisl tortor, consectetur quis imperdiet bibendum, laoreet sed arcu. Sed condimentum iaculis ex, in faucibus lorem accumsan non. Donec mattis tincidunt metus. Morbi sed tortor a risus luctus dignissim.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <!-- first count item -->
-                <div class="col-md-3 col-sm-6 col-xs-6 text-center ">
-                    <div class="counters-item">
-                        <i class="tf-ion-ios-alarm-outline"></i>
-                        <div>
-                            <span class="counter" data-count="150">0</span>
-                        </div>
-                        <h3>Happy Clients</h3>
-                    </div>
-                </div>
-                <!-- end first count item -->
-
-                <!-- second count item -->
-                <div class="col-md-3 col-sm-6 col-xs-6 text-center ">
-                    <div class="counters-item">
-                        <i class="tf-ion-ios-analytics-outline"></i>
-                        <div>
-                            <span class="counter" data-count="130">0</span>
-                        </div>
-                        <h3>Projects completed</h3>
-                    </div>
-                </div>
-                <!-- end second count item -->
-
-                <!-- third count item -->
-                <div class="col-md-3 col-sm-6 col-xs-6 text-center ">
-                    <div class="counters-item">
-                        <i class="tf-ion-ios-compose-outline"></i>
-                        <div>
-                            <span class="counter" data-count="99">0</span>
-                        </div>
-                        <h3>Positive feedback</h3>
-
-                    </div>
-                </div>
-                <!-- end third count item -->
-
-                <!-- fourth count item -->
-                <div class="col-md-3 col-sm-6 col-xs-6 text-center ">
-                    <div class="counters-item kill-border">
-                        <i class="tf-ion-ios-bolt-outline"></i>
-                        <div>
-                            <span class="counter" data-count="250">0</span>
-                        </div>
-                        <h3>Cups of Coffee</h3>
-                    </div>
-                </div>
-                <!-- end fourth count item -->
-            </div> <!-- end row -->
-        </div> <!-- end container -->
-    </section> <!-- end section -->
-
-    <!-- Start Testimonial
-    =========================================== -->
-
-        <section class="testimonial section" id="testimonial">
+        <!--
+        ==================================================
+        Header Section Start
+        ================================================== -->
+        <section class="top-bar animated-header">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <!-- testimonial wrapper -->
-                        <div class="testimonial-slider">
-                            <!-- testimonial single -->
-                            <div class="item text-center">
-                                <i class="tf-ion-chatbubbles"></i>
-                                <!-- client info -->
-                                <div class="client-details">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos earum, magni asperiores, unde corporis labore, enim, voluptatum officiis voluptates alias natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia?</p>
-                                </div>
-                                <!-- /client info -->
-                                <!-- client photo -->
-                                <div class="client-thumb">
-                                    <img loading="lazy" src="images/client-logo/clients-1.jpg" class="img-fluid" alt="">
-                                </div>
-                                <div class="client-meta">
-                                    <h3>William Martin</h3>
-                                    <span>CEO , Company Name</span>
-                                </div>
-                                <!-- /client photo -->
-                            </div>
-                            <!-- /testimonial single -->
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="../images/logo.png" alt="logo">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
 
-                            <!-- testimonial single -->
-                            <div class="item text-center">
-                                <i class="tf-ion-chatbubbles"></i>
-                                <!-- client info -->
-                                <div class="client-details">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos earum, magni asperiores, unde corporis labore, enim, voluptatum officiis voluptates alias natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia?</p>
-                                </div>
-                                <!-- /client info -->
-                                <!-- client photo -->
-                                <div class="client-thumb">
-                                    <img loading="lazy" src="images/client-logo/clients-2.jpg" class="img-fluid" alt="">
-                                </div>
-                                <div class="client-meta">
-                                    <h3>Emma Harrison</h3>
-                                    <span>CEO , Company Name</span>
-                                </div>
-                                <!-- /client photo -->
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home
+                                            <span class="sr-only">(current)</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about.html">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="service.html">Service</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Pages
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="404.html">404 Page</a>
+                                            <a class="dropdown-item" href="gallery.html">Gallery</a>
+                                            <a class="dropdown-item" href="single-post.html">Single Post</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Blog
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="blog-fullwidth.html">Blog Full</a>
+                                            <a class="dropdown-item" href="blog-left-sidebar.html">Blog Left sidebar</a>
+                                            <a class="dropdown-item" href="blog-right-sidebar.html">Blog Right sidebar</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
                             </div>
-                            <!-- /testimonial single -->
-
-                            <!-- testimonial single -->
-                            <div class="item text-center">
-                                <i class="tf-ion-chatbubbles"></i>
-                                <!-- client info -->
-                                <div class="client-details">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos earum, magni asperiores, unde corporis labore, enim, voluptatum officiis voluptates alias natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia?</p>
-                                </div>
-                                <!-- /client info -->
-                                <!-- client photo -->
-                                <div class="client-thumb">
-                                    <img loading="lazy" src="images/client-logo/clients-3.jpg" class="img-fluid" alt="">
-                                </div>
-                                <div class="client-meta">
-                                    <h3>Alexander Lucas</h3>
-                                    <span>CEO , Company Name</span>
-                                </div>
-                                <!-- /client photo -->
-                            </div>
-                            <!-- /testimonial single -->
-                        </div>
-                    </div> 		<!-- end col lg 12 -->
-                </div>	    <!-- End row -->
-            </div>       <!-- End container -->
-        </section>    <!-- End Section -->
-
-    <!--
-    Start Blog Section
-    =========================================== -->
-    <section class="blog" id="blog">
-        <div class="container">
-            <div class="row justify-content-center">
-                <!-- section title -->
-                <div class="col-xl-6 col-lg-8">
-                    <div class="title text-center ">
-                        <h2> Latest <span class="color">Posts</span></h2>
-                        <div class="border"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus facere accusamus, reprehenderit libero inventore nam.</p>
+                        </nav>
                     </div>
                 </div>
-                <!-- /section title -->
             </div>
+        </section>
 
-            <div class="row">
-                <!-- single blog post -->
-                <article class="col-lg-4 col-md-6">
-                    <div class="post-item">
-                        <div class="media-wrapper">
-                            <img loading="lazy" src="images/blog/post-1.jpg" alt="amazing caves coverimage" class="img-fluid">
-                        </div>
-
-                        <div class="content">
-                            <h3><a href="single-post.html">Reasons to Smile</a></h3>
-                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                                moon officia aute, non skateboard dolor brunch.</p>
-                            <a class="btn btn-main" href="single-post.html">Read more</a>
-                        </div>
-                    </div>
-                </article>
-                <!-- /single blog post -->
-
-                <!-- single blog post -->
-                <article class="col-lg-4 col-md-6">
-                    <div class="post-item">
-                        <div class="media-wrapper">
-                            <img loading="lazy" src="images/blog/post-2.jpg" alt="amazing caves coverimage" class="img-fluid">
-                        </div>
-
-                        <div class="content">
-                            <h3><a href="single-post.html">A Few Moments</a></h3>
-                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                                moon officia aute, non skateboard dolor brunch.</p>
-                            <a class="btn btn-main" href="single-post.html">Read more</a>
-                        </div>
-                    </div>
-                </article>
-                <!-- end single blog post -->
-
-                <!-- single blog post -->
-                <article class="col-lg-4 col-md-6">
-                    <div class="post-item">
-                        <div class="media-wrapper">
-                            <img loading="lazy" src="images/blog/post-3.jpg" alt="amazing caves coverimage" class="img-fluid">
-                        </div>
-
-                        <div class="content">
-                            <h3><a href="single-post.html">Hints for Life</a></h3>
-                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                                moon officia aute, non skateboard dolor brunch.</p>
-                            <a class="btn btn-main" href="single-post.html">Read more</a>
-                        </div>
-                    </div>
-                </article>
-                <!-- end single blog post -->
-            </div> <!-- end row -->
-        </div> <!-- end container -->
-    </section> <!-- end section -->
-
-    <footer id="footer" class="bg-one">
-    <div class="top-footer">
+        <!--
+        ==================================================
+        Slider Section Start
+        ================================================== -->
+        <section id="hero-area">
         <div class="container">
-        <div class="row justify-content-around">
-            <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
-            <h3>about</h3>
-            <p>Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere.</p>
-            </div>
-            <!-- End of .col-sm-3 -->
+            <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="block wow fadeInUp" data-wow-delay=".3s">
 
-            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <ul>
-                <li>
-                <h3>Our Services</h3>
-                </li>
-                <li><a href="service.html">Ui/Ux Design</a></li>
-                <li><a href="service.html">Graphic Design</a></li>
-                <li><a href="service.html">Web Design</a></li>
-                <li><a href="service.html">Web Development</a></li>
-            </ul>
+                <!-- Slider -->
+                <section class="cd-intro">
+                    <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s">
+                    <span>HI, MY NAME IS JONATHON &amp; I AM A</span><br>
+                    <span class="cd-words-wrapper">
+                        <b class="is-visible">DESIGNER</b>
+                        <b>DEVELOPER</b>
+                        <b>FATHER</b>
+                    </span>
+                    </h1>
+                </section> <!-- cd-intro -->
+                <!-- /.slider -->
+                <h2 class="wow fadeInUp animated" data-wow-delay=".6s">
+                    With 10 years experience, I've occupied many roles including digital design director,<br> web designer and
+                    developer. This site showcases some of my work.
+                </h2>
+                <a class="btn-lines dark light wow fadeInUp animated btn btn-default btn-green hvr-bounce-to-right"
+                    data-wow-delay=".9s" href="https://themefisher.com/" target="_blank">Download More</a>
+                </div>
             </div>
-            <!-- End of .col-sm-3 -->
-
-            <div class="col-lg-2 col-md-6 mb-5 mb-md-0">
-            <ul>
-                <li>
-                <h3>Quick Links</h3>
-                </li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="service.html">Services</a></li>
-                <li><a href="blog.html">Blogs</a></li>
-                <li><a href="404.html">404</a></li>
-            </ul>
             </div>
-            <!-- End of .col-sm-3 -->
-
-            <div class="col-lg-3 col-md-6">
-            <ul>
-                <li>
-                <h3>Connect with us Socially</h3>
-                </li>
-                <li><a href="https://www.facebook.com/themefisher/">Facebook</a></li>
-                <li><a href="https://www.twitter.com/themefisher/">Twitter</a></li>
-                <li><a href="https://www.youtube.com/channel/UCx9qVW8VF0LmTi4OF2F8YdA">Youtube</a></li>
-                <li><a href="https://www.github.com/themefisher/">Github</a></li>
-            </ul>
-            </div>
-            <!-- End of .col-sm-3 -->
-
         </div>
-        </div> <!-- end container -->
-    </div>
-    <div class="footer-bottom">
-        <h5>&copy; Copyright 2020. All rights reserved.</h5>
-        <h6>Design and Developed by <a href="https://themefisher.com/">Themefisher</a></h6>
-    </div>
-    </footer> <!-- end footer -->
+        </section>
+        <!--/#main-slider-->
+
+        <!--
+        ==================================================
+        About Section Start
+        ================================================== -->
+        <section id="about">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
+                <h2>
+                    ABOUT ME
+                </h2>
+                <p>
+                    Hello, I’m a UI/UX Designer &amp; Front End Developer from Victoria, Australia. I hold a master degree of
+                    Web Design from the World University.And scrambled it to make a type specimen book. It has survived not only
+                    five centuries
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, adipisci voluptatum repudiandae, natus
+                    impedit repellat aut officia illum at assumenda iusto reiciendis placeat. Temporibus, vero.
+                </p>
+                </div>
+
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+                <img src="images/about/about.jpg" alt="">
+                </div>
+            </div>
+            </div>
+        </div>
+        </section> <!-- /#about -->
 
 
-    <!-- end Footer Area
-    ========================================== -->
-    <!--
-        Essential Scripts
-        =====================================-->
-    <!-- Main jQuery -->
-    <script src="plugins/jquery/jquery.min.js"></script>
+        <!--
+        ==================================================
+        Portfolio Section Start
+        ================================================== -->
+        <section id="works" class="works">
+            <div class="container">
+                <div class="section-heading">
+                <h1 class="title wow fadeInDown" data-wow-delay=".3s">Latest Works</h1>
+                <p class="wow fadeInDown" data-wow-delay=".5s">
+                    Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est.
+                    Aenean posuere <br> tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis
+                    lacus.
+                </p>
+                </div>
+                <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
+                    <div class="img-wrapper">
+                        <img src="images/portfolio/item-1.jpg" class="img-fluid" alt="this is a title">
+                        <div class="overlay">
+                        <div class="buttons">
+                            <a rel="gallery" class="fancybox" href="images/portfolio/item-1.jpg">Demo</a>
+                            <a target="_blank" href="single-portfolio.html">Details</a>
+                        </div>
+                        </div>
+                    </div>
+                    <figcaption>
+                        <h4>
+                        <a href="#">
+                            Dew Drop
+                        </a>
+                        </h4>
+                        <p>
+                        Redesigne UI Concept
+                        </p>
+                    </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <div class="img-wrapper">
+                        <img src="images/portfolio/item-2.jpg" class="img-fluid" alt="this is a title">
+                        <div class="overlay">
+                        <div class="buttons">
+                            <a rel="gallery" class="fancybox" href="images/portfolio/item-2.jpg">Demo</a>
+                            <a target="_blank" href="single-portfolio.html">Details</a>
+                        </div>
+                        </div>
+                    </div>
+                    <figcaption>
+                        <h4>
+                        <a href="#">
+                            Bottle Mockup
+                        </a>
+                        </h4>
+                        <p>
+                        Lorem ipsum dolor sit.
+                        </p>
+                    </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <div class="img-wrapper">
+                        <img src="images/portfolio/item-3.jpg" class="img-fluid" alt="">
+                        <div class="overlay">
+                        <div class="buttons">
+                            <a rel="gallery" class="fancybox" href="images/portfolio/item-3.jpg">Demo</a>
+                            <a target="_blank" href="single-portfolio.html">Details</a>
+                        </div>
+                        </div>
+                    </div>
+                    <figcaption>
+                        <h4>
+                        <a href="#">
+                            Table Design
+                        </a>
+                        </h4>
+                        <p>
+                        Lorem ipsum dolor sit amet.
+                        </p>
+                    </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
+                    <div class="img-wrapper">
+                        <img src="images/portfolio/item-4.jpg" class="img-fluid" alt="">
+                        <div class="overlay">
+                        <div class="buttons">
+                            <a rel="gallery" class="fancybox" href="images/portfolio/item-4.jpg">Demo</a>
+                            <a target="_blank" href="single-portfolio.html">Details</a>
+                        </div>
+                        </div>
+                    </div>
+                    <figcaption>
+                        <h4>
+                        <a href="#">
+                            Make Up elements
+                        </a>
+                        </h4>
+                        <p>
+                        Lorem ipsum dolor.
+                        </p>
+                    </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="900ms">
+                    <div class="img-wrapper">
+                        <img src="images/portfolio/item-5.jpg" class="img-fluid" alt="">
+                        <div class="overlay">
+                        <div class="buttons">
+                            <a rel="gallery" class="fancybox" href="images/portfolio/item-5.jpg">Demo</a>
+                            <a target="_blank" href="single-portfolio.html">Details</a>
+                        </div>
+                        </div>
+                    </div>
+                    <figcaption>
+                        <h4>
+                        <a href="#">
+                            Shoping Bag Concept
+                        </a>
+                        </h4>
+                        <p>
+                        Lorem ipsum dolor.
+                        </p>
+                    </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="1200ms">
+                    <div class="img-wrapper">
+                        <img src="images/portfolio/item-6.jpg" class="img-fluid" alt="">
+                        <div class="overlay">
+                        <div class="buttons">
+                            <a rel="gallery" class="fancybox" href="images/portfolio/item-6.jpg">Demo</a>
+                            <a target="_blank" href="single-portfolio.html">Details</a>
+                        </div>
+                        </div>
+                    </div>
+                    <figcaption>
+                        <h4>
+                        <a href="#">
+                            Caramel Bottle
+                        </a>
+                        </h4>
+                        <p>
+                        Lorem ipsum dolor.
+                        </p>
+                    </figcaption>
+                    </figure>
+                </div>
+                </div>
+            </div>
+        </section> <!-- #works -->
+        <!--
+        ==================================================
+        Portfolio Section Start
+        ================================================== -->
+        <section id="feature">
+            <div class="container">
+                <div class="section-heading">
+                <h1 class="title wow fadeInDown" data-wow-delay=".3s">Offer From Me</h1>
+                <p class="wow fadeInDown" data-wow-delay=".5s">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed,<br> quasi dolores numquam dolor vero ex, tempora
+                    commodi repellendus quod laborum.
+                </p>
+                </div>
+                <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <div class="media-left">
+                        <div class="icon">
+                        <i class="ion-ios-flask-outline"></i>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="600ms">
+                    <div class="media-left">
+                        <div class="icon">
+                        <i class="ion-ios-lightbulb-outline"></i>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Well documented.</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="900ms">
+                    <div class="media-left">
+                        <div class="icon">
+                        <i class="ion-ios-lightbulb-outline"></i>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Well documented.</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1200ms">
+                    <div class="media-left">
+                        <div class="icon">
+                        <i class="ion-ios-americanfootball-outline"></i>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Free updates</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1500ms">
+                    <div class="media-left">
+                        <div class="icon">
+                        <i class="ion-ios-keypad-outline"></i>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Solid Support</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1800ms">
+                    <div class="media-left">
+                        <div class="icon">
+                        <i class="ion-ios-barcode-outline"></i>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Simple Installation</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section> <!-- /#feature -->
 
-    <!-- Bootstrap4 -->
-    <script src="plugins/bootstrap/bootstrap.min.js"></script>
-    <!-- Parallax -->
-    <script src="plugins/parallax/jquery.parallax-1.1.3.js"></script>
-    <!-- lightbox -->
-    <script src="plugins/lightbox2/js/lightbox.min.js"></script>
-    <!-- Owl Carousel -->
-    <script src="plugins/slick/slick.min.js"></script>
-    <!-- filter -->
-    <script src="plugins/filterizr/jquery.filterizr.min.js"></script>
-    <!-- Smooth Scroll js -->
-    <script src="plugins/smooth-scroll/smooth-scroll.min.js"></script>
-    <!-- Google Map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"></script>
-    <script src="plugins/google-map/gmap.js"></script>
 
-    <!-- Custom js -->
-    <script src="js/script.js"></script>
+        <!--
+        ==================================================
+        Call To Action Section Start
+        ================================================== -->
+        <section id="call-to-action">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block">
+                            <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">SO WHAT YOU THINK ?</h1>
+                            <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,<br>possimus commodi, fugiat magnam temporibus vero magni recusandae? Dolore, maxime praesentium.</p>
+                            <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact With Me</a>
+                        </div>
+                    </div>
 
-</body>
+                </div>
+            </div>
+        </section>
 
+        <!--
+        ==================================================
+        Footer Section Start
+        ================================================== -->
+        <footer id="footer">
+            <div class="container">
+                <div class="row content-justify-between">
+                    <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+                        <p class="copyright">Copyright: Design and Developed by <a href="http://www.Themefisher.com" target="_blank">Themefisher</a>. <br>
+                            Get More Bootstrap Template From Our
+                            <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank">Store</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <!-- Social Media -->
+                        <ul class="social text-center text-md-right text-lg-right">
+                            <li>
+                                <a href="http://wwww.fb.com/themefisher" class="Facebook">
+                                    <i class="ion-social-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://wwww.twitter.com/themefisher" class="Twitter">
+                                    <i class="ion-social-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="Linkedin">
+                                    <i class="ion-social-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://wwww.fb.com/themefisher" class="Google Plus">
+                                    <i class="ion-social-googleplus"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer> <!-- /#footer -->
+
+        <!-- Template Javascript Files
+        ================================================== -->
+        <!-- jquery -->
+        <script src="{{asset('plugins/jQurey/jquery.min.js')}}"></script>
+        <!-- Form Validation -->
+        <script src="{{asset('plugins/form-validation/jquery.form.js')}}"></script>
+        <script src="{{asset('plugins/form-validation/jquery.validate.min.js')}}"></script>
+        <!-- slick slider -->
+        <script src="{{asset('plugins/slick/slick.min.js')}}"></script>
+        <!-- bootstrap js -->
+        <script src="{{asset('plugins/bootstrap/bootstrap.min.js')}}"></script>
+        <!-- wow js -->
+        <script src="{{asset('plugins/wow-js/wow.min.js')}}"></script>
+        <!-- slider js -->
+        <script src="{{asset('plugins/slider/slider.js')}}"></script>
+        <!-- Fancybox -->
+        <script src="{{asset('plugins/facncybox/jquery.fancybox.js')}}"></script>
+        <!-- template main js -->
+        <script src="{{asset('js/main.js')}}"></script>
+ 	</body>
 </html>
