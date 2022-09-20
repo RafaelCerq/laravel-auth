@@ -13,9 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/modelo', function () {
+    return view('layouts/modelo');
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Route::get('/', function () {
+//     return view('dashboard');
+// });
 
 // Route::get('/', function () {
 //     return view('dashboard');

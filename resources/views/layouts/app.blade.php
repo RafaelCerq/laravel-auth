@@ -12,6 +12,19 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+        <!-- Themefisher Icon font -->
+        <link rel="stylesheet" href="{{asset('plugins/themefisher-font/style.css')}}">
+        <!-- bootstrap.min css -->
+        <link rel="stylesheet" href="{{asset('plugins/bootstrap/bootstrap.min.css')}}">
+        <!-- Lightbox.min css -->
+        <link rel="stylesheet" href="{{asset('plugins/lightbox2/css/lightbox.min.css')}}">
+        <!-- animation css -->
+        <link rel="stylesheet" href="{{asset('plugins/animate/animate.css')}}">
+        <!-- Slick Carousel -->
+        <link rel="stylesheet" href="{{asset('plugins/slick/slick.css')}}">
+        <!-- Main Stylesheet -->
+        <link rel="stylesheet" href="{{asset('css/style.css')}}">
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
@@ -29,5 +42,27 @@
                 {{ $slot }}
             </main>
         </div>
+
+        <!-- Main jQuery -->
+        <script src="{{asset('plugins/jquery/jquery.min.js')}}"></script>
+
+        <!-- Bootstrap4 -->
+        <script src="{{asset('plugins/bootstrap/bootstrap.min.js')}}"></script>
+        <!-- Parallax -->
+        <script src="{{asset('plugins/parallax/jquery.parallax-1.1.3.js')}}"></script>
+        <!-- lightbox -->
+        <script src="{{asset('plugins/lightbox2/js/lightbox.min.js')}}"></script>
+        <!-- Owl Carousel -->
+        <script src="{{asset('plugins/slick/slick.min.js')}}"></script>
+        <!-- filter -->
+        <script src="{{asset('plugins/filterizr/jquery.filterizr.min.js')}}"></script>
+        <!-- Smooth Scroll js -->
+        <script src="{{asset('plugins/smooth-scroll/smooth-scroll.min.js')}}"></script>
+        <!-- Google Map -->
+        {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"></script> --}}
+        <script src="{{asset('plugins/google-map/gmap.js')}}"></script>
+
+        <!-- Custom js -->
+        <script src="js/script.js"></script>
     </body>
 </html>

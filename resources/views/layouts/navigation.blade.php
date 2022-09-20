@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
+{{-- <nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -89,4 +89,57 @@
             </div>
         </div>
     </div>
+
+</nav> --}}
+
+<div class="container">
+    <!-- main nav -->
+    <nav class="navbar navbar-expand-lg navbar-light px-0">
+        <!-- logo -->
+        <a class="navbar-brand logo" href="index.html">
+            <img loading="lazy" class="logo-default" src="images/logo.png" alt="logo" />
+            <img loading="lazy" class="logo-white" src="images/logo-white.png" alt="logo" />
+        </a>
+        <!-- /logo -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigation">
+
+            <ul class="navbar-nav ml-auto text-center">
+                @guest
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('login') }}">@lang('system.login')</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('register') }}">{{ __('system.register') }}</a>
+                    </li>
+                @else
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('dashboard') }}">{{ __('system.dashboard') }}</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            {{ Auth::user()->name }} <span class="caret"></span>
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                {{ __('system.logout') }}
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
+                        </div>
+                    </li>
+                @endguest
+                <li class="nav-item">
+                    <a href="{{ route('lang') }}" class="nav-link">{{__('system.lang')}}</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- /main nav -->
 </nav>
