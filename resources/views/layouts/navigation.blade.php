@@ -3,8 +3,8 @@
         <div class="row">
             <div class="col-lg-12">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="../images/logo.png" alt="logo">
+                    <a class="navbar-brand" href="{{ route('dashboard') }}">
+                        <img src="../images/dev/logoname-dashboard.png" alt="logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -30,6 +30,8 @@
                                     </a>
 
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="{{ route('settings') }}">{{ __('system.settings') }}</a>
+
                                         <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                             {{ __('system.logout') }}
                                         </a>
@@ -37,6 +39,7 @@
                                         <form class="form-group" id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                             @csrf
                                         </form>
+
                                     </div>
                                 </li>
                             @endguest

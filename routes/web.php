@@ -17,6 +17,10 @@ Route::get('/modelo', function () {
     return view('layouts/modelo');
 });
 
+Route::get('/settings', function () {
+    return view('config-auth/dashboard-config');
+})->middleware(['auth'])->name('settings');
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -32,6 +36,7 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
+
 
 Route::get('lang', function () {
     $lang = session('lang', 'pt-br');

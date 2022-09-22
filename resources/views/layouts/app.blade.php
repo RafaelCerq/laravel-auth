@@ -7,6 +7,8 @@
 
         <title>{{ config('app.name', 'Laravel') }}</title>
 
+        <link rel="icon" href="{{ asset('images/dev/favicon.ico') }}">
+
         <!-- Fonts -->
         {{-- <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap"> --}}
 
@@ -49,21 +51,21 @@
             <div class="container">
                 <div class="row content-justify-between">
                     <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
-                        <p class="copyright">Copyright: Design and Developed by <a href="http://www.Themefisher.com" target="_blank">Themefisher</a>. <br>
-                            Get More Bootstrap Template From Our
-                            <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank">Store</a>
+                        <p class="copyright">Copyright: Design and Developed by <a href="#" target="_blank">Space Web Sistemas</a>.
+                            {{-- <br>Get More Bootstrap Template From Our
+                            <a href="#" target="_blank">Store</a> --}}
                         </p>
                     </div>
                     <div class="col-md-4 col-12">
                         <!-- Social Media -->
                         <ul class="social text-center text-md-right text-lg-right">
                             <li>
-                                <a href="http://wwww.fb.com/themefisher" class="Facebook">
+                                <a href="#" class="Facebook">
                                     <i class="ion-social-facebook"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="http://wwww.twitter.com/themefisher" class="Twitter">
+                                <a href="#" class="Twitter">
                                     <i class="ion-social-twitter"></i>
                                 </a>
                             </li>
@@ -73,7 +75,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="http://wwww.fb.com/themefisher" class="Google Plus">
+                                <a href="#" class="Google Plus">
                                     <i class="ion-social-googleplus"></i>
                                 </a>
                             </li>

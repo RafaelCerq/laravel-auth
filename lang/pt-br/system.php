@@ -49,4 +49,19 @@ return [
     "resend_verification_email"=> "Reenviar o e-mail de verificação" ,
     "a_new_verification_link_has_been_sent"=> "Um novo link de verificação foi enviado para seu e-mail",
     "thanks_for_signing_up_before_getting_started"=> "Obrigado por inscrever-se! Antes de começar, você poderia verificar seu endereço de e-mail clicando no link que acabamos de enviar para você? Se você não recebeu o e-mail, teremos o prazer de lhe enviar outro.",
+    "settings" => "Configurações",
+    'list'=>'Lista de :page',
+    'user_list'=>'Usuários',
+    'user'=>'Usuário',
+    'permission_list'=>'Permissões',
+    'permission'=>'Permissão',
+    'role_list'=>'Funções',
+    'role'=>'Função',
+    'what_to_do_here' => 'O que fazer aqui?',
+    'in_this_place_you' => 'Neste local você pode cadastrar seus usuários de acesso, suas funções e configurá-los com permissões de acesso.',
+
+
+
+
+
 ];
