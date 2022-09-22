@@ -60,7 +60,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="block">
-                        <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">{{__('system.what_to_do_here')}}</h1>
+                        <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">{{__('system.what_to_do_here')}}</h2>
                         <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">{{__('system.in_this_place_you')}}</p>
                         {{-- <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact With Me</a> --}}
                     </div>

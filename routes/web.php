@@ -38,6 +38,16 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 
+Route::prefix('admin')->middleware('auth')->namespace('ConfigAuth')->group(function () {
+    Route::resource('/users', 'UserController');
+});
+
+// Route::prefix('admin')->middleware('auth','can:acl')->namespace('ConfigAuth')->group(function () {
+//     Route::resource('/permissions', 'PermissionController');
+//     Route::resource('/roles', 'RoleController');
+// });
+
+
 Route::get('lang', function () {
     $lang = session('lang', 'pt-br');
     if($lang == 'pt-br'){
