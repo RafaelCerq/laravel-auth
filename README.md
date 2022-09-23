@@ -8,14 +8,20 @@
 - copy .env.example .env
 - php artisan key:generate
 - Configurar .env
-    - configurações Mysql
-    - configurações E-mail
-    - configurações queue = database;
+    - configurações banco de dados
+    - Em caso de utilizar sqlite, crie o arquivo "database.sqlite" dentro do diretório "database". Obs: ao executar apenas o migrate, será solicitado criação do BD
 - npm run dev
 - npm run build
 - composer dump-autoload
 - php artisan storage:link
-- php artisan migrate --seed
+- php artisan migrate
+- php artisan db:seed
+
+
+# Acesso:
+- Ao executar a configuração, inicie o projeto com comando: php artisan serve
+- Utilize os dados para acessar o sistema: admin@mail.com, senha: 12345678
+
 
 
 # Processo de criação do projeto:
