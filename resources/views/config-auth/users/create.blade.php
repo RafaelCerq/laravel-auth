@@ -13,7 +13,7 @@
 
 
         @form_component(['action'=>route($routeName.".store"), 'method'=>"POST"])
-            @include('admin.'.$routeName.'.form')
+            @include('config-auth.'.$routeName.'.form')
             <button class="btn btn-primary btn-md float-right">@lang('system.add')</button>
         @endform_component
 

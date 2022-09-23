@@ -17,9 +17,9 @@ Route::get('/modelo', function () {
     return view('layouts/modelo');
 });
 
-Route::get('/settings', function () {
-    return view('config-auth/dashboard-config');
-})->middleware(['auth'])->name('settings');
+// Route::get('/settings', function () {
+//     return view('config-auth/dashboard-config');
+// })->middleware(['auth'])->name('settings');
 
 Route::get('/', function () {
     return view('welcome');
@@ -33,19 +33,25 @@ Route::get('/', function () {
 //     return view('dashboard');
 // })->middleware(['auth'])->name('dashboard');
 
+Auth::routes();
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
 
-Route::prefix('admin')->middleware('auth')->namespace('ConfigAuth')->group(function () {
+Route::middleware('auth')->namespace('ConfigAuth')->group(function () {
+    Route::get('/settings', 'DashboardConfigController@index')->name('settings');
+});
+
+Route::prefix('settings')->middleware('auth')->namespace('ConfigAuth')->group(function () {
     Route::resource('/users', 'UserController');
 });
 
-// Route::prefix('admin')->middleware('auth','can:acl')->namespace('ConfigAuth')->group(function () {
-//     Route::resource('/permissions', 'PermissionController');
-//     Route::resource('/roles', 'RoleController');
-// });
+Route::prefix('settings')->middleware('auth','can:acl')->namespace('ConfigAuth')->group(function () {
+    Route::resource('/permissions', 'PermissionController');
+    Route::resource('/roles', 'RoleController');
+});
 
 
 Route::get('lang', function () {
@@ -62,3 +68,7 @@ Route::get('lang', function () {
 })->name('lang');
 
 require __DIR__.'/auth.php';
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

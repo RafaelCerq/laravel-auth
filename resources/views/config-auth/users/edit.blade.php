@@ -13,7 +13,7 @@
 
 
         @form_component(['action'=>route($routeName.".update",$register->id), 'method'=>"PUT"])
-            @include('admin.'.$routeName.'.form')
+            @include('config-auth.'.$routeName.'.form')
             <button class="btn btn-primary btn-md float-right">@lang('system.edit')</button>
         @endform_component
 

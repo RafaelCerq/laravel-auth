@@ -61,7 +61,7 @@ class UserController extends Controller
             (Object)['url'=>'', 'title'=>trans('system.list', ['page'=>$page])],
         ];
 
-        return view('admin.'.$routeName.'.index',compact('list','search','page','routeName','columnList', 'breadcrumb'));
+        return view('config-auth.'.$routeName.'.index',compact('list','search','page','routeName','columnList', 'breadcrumb'));
     }
 
     /**
@@ -90,7 +90,7 @@ class UserController extends Controller
             (Object)['url'=>'', 'title'=>trans('system.create_crud',['page'=>$page_create])],
         ];
 
-        return view('admin.'.$routeName.'.create',compact('page', 'page_create', 'routeName', 'breadcrumb', 'roles'));
+        return view('config-auth.'.$routeName.'.create',compact('page', 'page_create', 'routeName', 'breadcrumb', 'roles'));
     }
 
     /**
@@ -158,7 +158,7 @@ class UserController extends Controller
                 $delete = true;
             }
 
-            return view('admin.'.$routeName.'.show',compact('register','page','page2','routeName','breadcrumb','delete'));
+            return view('config-auth.'.$routeName.'.show',compact('register','page','page2','routeName','breadcrumb','delete'));
         }
 
         return redirect()->route($routeName.'.index');
@@ -193,7 +193,7 @@ class UserController extends Controller
                 (Object)['url'=>'', 'title'=>trans('system.edit_crud',['page'=>$page2])],
             ];
 
-            return view('admin.'.$routeName.'.edit',compact('register', 'page', 'page2', 'routeName', 'breadcrumb', 'roles'));
+            return view('config-auth.'.$routeName.'.edit',compact('register', 'page', 'page2', 'routeName', 'breadcrumb', 'roles'));
 
         }
 
