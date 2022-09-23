@@ -21,6 +21,21 @@
                         </div>
                     </figure>
                 </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <figure class="wow fadeInLeft animated animated" data-wow-duration="500ms" data-wow-delay="500ms"
+                        style="visibility: visible; animation-duration: 300ms; -webkit-animation-duration: 300ms; animation-delay: 300ms; -webkit-animation-delay: 300ms; animation-name: fadeInLeft; -webkit-animation-name: fadeInLeft;">
+                        <div class="img-wrapper">
+                            <img src="{{asset('images/config-auth/config-auth-3.jpg')}}" class="img-fluid" alt="">
+                            <div class="overlay">
+                                <div class="buttons">
+                                <a rel="gallery" class="fancybox" href="{{ route('permissions.index') }}">{{__('system.permission_list')}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+
                 <div class="col-md-4 col-sm-6">
                     <figure class="wow fadeInLeft animated animated" data-wow-duration="500ms" data-wow-delay="300ms"
                         style="visibility: visible; animation-duration: 300ms; -webkit-animation-duration: 300ms; animation-delay: 300ms; -webkit-animation-delay: 300ms; animation-name: fadeInLeft; -webkit-animation-name: fadeInLeft;">
@@ -29,19 +44,6 @@
                             <div class="overlay">
                                 <div class="buttons">
                                 <a rel="gallery" class="fancybox" href="{{ route('roles.index') }}">{{__('system.role_list')}}</a>
-                                </div>
-                            </div>
-                        </div>
-                    </figure>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <figure class="wow fadeInLeft animated animated" data-wow-duration="500ms" data-wow-delay="500ms"
-                        style="visibility: visible; animation-duration: 300ms; -webkit-animation-duration: 300ms; animation-delay: 300ms; -webkit-animation-delay: 300ms; animation-name: fadeInLeft; -webkit-animation-name: fadeInLeft;">
-                        <div class="img-wrapper">
-                            <img src="{{asset('images/config-auth/config-auth-3.jpg')}}" class="img-fluid" alt="">
-                            <div class="overlay">
-                                <div class="buttons">
-                                <a rel="gallery" class="fancybox" href="images/config-auth/config-auth-3.jpg">{{__('system.permission_list')}}</a>
                                 </div>
                             </div>
                         </div>
