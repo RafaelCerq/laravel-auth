@@ -15,7 +15,7 @@
                             <img src="{{asset('images/config-auth/config-auth-1.jpg')}}" class="img-fluid" alt="this is a title">
                             <div class="overlay">
                                 <div class="buttons">
-                                    <a rel="gallery" class="fancybox" href="{{asset('images/config-auth/config-auth-1.jpg')}}">{{__('system.user_list')}}</a>
+                                    <a rel="gallery" class="fancybox" href="{{ route('users.index') }}">{{__('system.user_list')}}</a>
                                 </div>
                             </div>
                         </div>
@@ -25,7 +25,7 @@
                     <figure class="wow fadeInLeft animated animated" data-wow-duration="500ms" data-wow-delay="300ms"
                         style="visibility: visible; animation-duration: 300ms; -webkit-animation-duration: 300ms; animation-delay: 300ms; -webkit-animation-delay: 300ms; animation-name: fadeInLeft; -webkit-animation-name: fadeInLeft;">
                         <div class="img-wrapper">
-                            <img src="images/config-auth/config-auth-2.jpg" class="img-fluid" alt="this is a title">
+                            <img src="{{asset('images/config-auth/config-auth-2.jpg')}}" class="img-fluid" alt="this is a title">
                             <div class="overlay">
                                 <div class="buttons">
                                 <a rel="gallery" class="fancybox" href="images/config-auth/config-auth-2.jpg">{{__('system.role_list')}}</a>
@@ -38,7 +38,7 @@
                     <figure class="wow fadeInLeft animated animated" data-wow-duration="500ms" data-wow-delay="500ms"
                         style="visibility: visible; animation-duration: 300ms; -webkit-animation-duration: 300ms; animation-delay: 300ms; -webkit-animation-delay: 300ms; animation-name: fadeInLeft; -webkit-animation-name: fadeInLeft;">
                         <div class="img-wrapper">
-                            <img src="images/config-auth/config-auth-3.jpg" class="img-fluid" alt="">
+                            <img src="{{asset('images/config-auth/config-auth-3.jpg')}}" class="img-fluid" alt="">
                             <div class="overlay">
                                 <div class="buttons">
                                 <a rel="gallery" class="fancybox" href="images/config-auth/config-auth-3.jpg">{{__('system.permission_list')}}</a>

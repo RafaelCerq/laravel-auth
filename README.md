@@ -3,18 +3,19 @@
 # Laravel 9^
 
 ## 🛠️ Configurações para rodar projeto
+- composer install
+- npm install
 - copy .env.example .env
 - php artisan key:generate
 - Configurar .env
     - configurações Mysql
     - configurações E-mail
     - configurações queue = database;
-- composer install
-- npm install
 - npm run dev
 - npm run build
-- php artisan migrate
+- composer dump-autoload
 - php artisan storage:link
+- php artisan migrate --seed
 
 
 # Processo de criação do projeto:

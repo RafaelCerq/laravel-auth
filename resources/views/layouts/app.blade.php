@@ -33,6 +33,8 @@
         <link rel="stylesheet" href="{{asset('plugins/hover/hover-min.css')}}">
         <!-- template main css file -->
         <link rel="stylesheet" href="{{asset('css/style.css')}}">
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body class="font-sans antialiased">
         <header class="navigation fixed-top">

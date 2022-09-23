@@ -2,14 +2,24 @@
 
 @section('content')
 
-    @page_component(['col'=>12, 'page'=>__('system.list',['page'=>$page])])
+    {{-- @php
+        $col='12';
+        $namepage = trans('system.list', ['page'=>$page]);
+    @endphp --}}
+    <x-page :col="12" :namepage="trans('system.list', ['page'=>$page])">
+        <x-alert :msg="session('msg')" :status="session('status')" />
 
-        @alert_component(['msg'=>session('msg'), 'status'=>session('status')])
-        @endalert_component
+        <x-breadcrumb :page="$page" :items="$breadcrumb ?? []" />
 
-        @breadcrumb_component(['page'=>$page, 'items'=>$breadcrumb ?? []])
-        @endbreadcrumb_component
+        <x-search :routeName="$routeName" :search="$search" />
 
+        <x-table :columnList="$columnList" :list="$list" :routeName="$routeName" />
+
+        <x-paginate :search="$search" :list="$list" />
+
+    </x-page>
+
+{{--
         @search_component(['routeName'=>$routeName, 'search'=>$search])
         @endsearch_component
 
@@ -17,7 +27,6 @@
         @endtable_component
 
         @paginate_component(['search'=>$search, 'list'=>$list])
-        @endpaginate_component
+        @endpaginate_component --}}
 
-    @endpage_component
 @endsection

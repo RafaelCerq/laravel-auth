@@ -37,7 +37,7 @@ class UserController extends Controller
         if (Gate::denies('list-user')) {
             session()->flash('msg', trans('system.access_denied'));
             session()->flash('status', 'error'); // success error notification
-            return redirect()->route('home');
+            return redirect()->route('settings');
         }
 
         $columnList = ['id'=>'#','name'=>trans('system.name'),'email'=>trans('system.email')];
@@ -57,7 +57,7 @@ class UserController extends Controller
         //$request->session()->flash('status', 'success'); // success error notification
 
         $breadcrumb = [
-            (Object)['url'=>route('home'), 'title'=>trans('system.home')],
+            (Object)['url'=>route('settings'), 'title'=>trans('system.home')],
             (Object)['url'=>'', 'title'=>trans('system.list', ['page'=>$page])],
         ];
 
@@ -74,7 +74,7 @@ class UserController extends Controller
         if (Gate::denies('create-user')) {
             session()->flash('msg', trans('system.access_denied'));
             session()->flash('status', 'error'); // success error notification
-            return redirect()->route('home');
+            return redirect()->route('settings');
         }
 
         $page = trans('system.user_list');
@@ -85,7 +85,7 @@ class UserController extends Controller
         $roles = $this->modelRole->all('name', 'ASC');
 
         $breadcrumb = [
-            (Object)['url'=>route('home'), 'title'=>trans('system.home')],
+            (Object)['url'=>route('settings'), 'title'=>trans('system.home')],
             (Object)['url'=>route($routeName.".index"), 'title'=>trans('system.list', ['page'=>$page])],
             (Object)['url'=>'', 'title'=>trans('system.create_crud',['page'=>$page_create])],
         ];
@@ -104,7 +104,7 @@ class UserController extends Controller
         if (Gate::denies('create-user')) {
             session()->flash('msg', trans('system.access_denied'));
             session()->flash('status', 'error'); // success error notification
-            return redirect()->route('home');
+            return redirect()->route('settings');
         }
 
         $data = $request->all();
@@ -116,7 +116,7 @@ class UserController extends Controller
         ])->validate();
 
         if ($this->model->create($data)) {
-            session()->flash('msg', trans('system.record_added_successusfully'));
+            session()->flash('msg', trans('system.record_added_successfully'));
             session()->flash('status', 'success'); // success error notification
             return redirect()->back();
         } else {
@@ -137,7 +137,7 @@ class UserController extends Controller
         if (Gate::denies('show-user')) {
             session()->flash('msg', trans('system.access_denied'));
             session()->flash('status', 'error'); // success error notification
-            return redirect()->route('home');
+            return redirect()->route('settings');
         }
 
         $routeName = $this->route;
@@ -147,7 +147,7 @@ class UserController extends Controller
             $page2 = trans('system.user');
 
             $breadcrumb = [
-                (object)['url'=>route('home'),'title'=>trans('system.home')],
+                (object)['url'=>route('settings'),'title'=>trans('system.home')],
                 (object)['url'=>route($routeName.".index"),'title'=>trans('system.list',['page'=>$page])],
                 (object)['url'=>'','title'=>trans('system.show_crud',['page'=>$page2])],
             ];
@@ -175,7 +175,7 @@ class UserController extends Controller
         if (Gate::denies('edit-user')) {
             session()->flash('msg', trans('system.access_denied'));
             session()->flash('status', 'error'); // success error notification
-            return redirect()->route('home');
+            return redirect()->route('settings');
         }
 
         $routeName = $this->route;
@@ -188,7 +188,7 @@ class UserController extends Controller
             $roles = $this->modelRole->all('name', 'ASC');
 
             $breadcrumb = [
-                (Object)['url'=>route('home'), 'title'=>trans('system.home')],
+                (Object)['url'=>route('settings'), 'title'=>trans('system.home')],
                 (Object)['url'=>route($routeName.".index"), 'title'=>trans('system.list', ['page'=>$page])],
                 (Object)['url'=>'', 'title'=>trans('system.edit_crud',['page'=>$page2])],
             ];
@@ -213,7 +213,7 @@ class UserController extends Controller
         if (Gate::denies('edit-user')) {
             session()->flash('msg', trans('system.access_denied'));
             session()->flash('status', 'error'); // success error notification
-            return redirect()->route('home');
+            return redirect()->route('settings');
         }
 
         $data = $request->all();
@@ -252,7 +252,7 @@ class UserController extends Controller
         if (Gate::denies('delete-user')) {
             session()->flash('msg', trans('system.access_denied'));
             session()->flash('status', 'error'); // success error notification
-            return redirect()->route('home');
+            return redirect()->route('settings');
         }
 
         if ($this->model->delete($id)) {

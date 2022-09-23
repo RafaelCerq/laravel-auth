@@ -2,20 +2,15 @@
 
 @section('content')
 
-    @page_component(['col'=>12, 'page'=>__('bolao.edit_crud',['page'=>$page2])])
+    <x-page :col="12" :namepage="trans('system.edit_crud', ['page'=>$page2])">
+        <x-alert :msg="session('msg')" :status="session('status')" />
 
-        @alert_component(['msg'=>session('msg'), 'status'=>session('status')])
-        @endalert_component
+        <x-breadcrumb :page="$page" :items="$breadcrumb ?? []" />
 
-        @breadcrumb_component(['page'=>$page, 'items'=>$breadcrumb ?? []])
-        @endbreadcrumb_component
-
-
-
-        @form_component(['action'=>route($routeName.".update",$register->id), 'method'=>"PUT"])
+        <x-form :action="route($routeName.'.update',$register->id)" :method="'PUT'">
             @include('config-auth.'.$routeName.'.form')
             <button class="btn btn-primary btn-md float-right">@lang('system.edit')</button>
-        @endform_component
+        </x-form>
+    </x-page>
 
-    @endpage_component
 @endsection

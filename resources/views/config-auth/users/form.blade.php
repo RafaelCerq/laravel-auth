@@ -36,25 +36,25 @@
         <select class="form-control" multiple name="roles[]">
             @foreach ($roles as $key => $value)
                 @php
-                $select = '';
-                if(old('roles') ?? false) {
-                    foreach (old('roles') as $key => $id) {
-                        if($id == $value->id){
-                            $select = "selected";
-                        }
-                    }
-                } else {
-                    if($register ?? false){
-                        foreach ($register->roles as $key => $role) {
-                            if($role->id == $value->id){
+                    $select = '';
+                    if(old('roles') ?? false) {
+                        foreach (old('roles') as $key => $id) {
+                            if($id == $value->id){
                                 $select = "selected";
                             }
                         }
+                    } else {
+                        if($register ?? false){
+                            foreach ($register->roles as $key => $role) {
+                                if($role->id == $value->id){
+                                    $select = "selected";
+                                }
+                            }
+                        }
                     }
-                }
                 @endphp
 
-            <option {{$select}} value="{{$value->id}}">{{$value->name}}</option>
+                <option {{$select}} value="{{$value->id}}">{{$value->name}}</option>
             @endforeach
         </select>
     </div>

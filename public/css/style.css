@@ -801,9 +801,14 @@ article {
   margin-bottom: 10px;
 }
 
+.section-component {
+  padding: 120px;
+}
+
 .gallery {
   padding: 100px;
 }
+
 .gallery figure .buttons {
   left: 40%;
 }
@@ -1091,9 +1096,13 @@ article {
 }
 
 #footer {
-  background: #fff;
-  padding: 25px 0;
-  color: #555;
+    background: #fff;
+    padding: 25px 0;
+    color: #555;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 #footer .copyright {
   font-size: 13px;

@@ -90,7 +90,7 @@ class RoleController extends Controller
         ])->validate();
 
         if ($this->model->create($data)) {
-            session()->flash('msg', trans('system.record_added_successusfully'));
+            session()->flash('msg', trans('system.record_added_successfully'));
             session()->flash('status', 'success'); // success error notification
             return redirect()->back();
         } else {
