@@ -11,11 +11,13 @@
     - configurações banco de dados
     - Em caso de utilizar sqlite, crie o arquivo "database.sqlite" dentro do diretório "database". Obs: ao executar apenas o migrate, será solicitado criação do BD
 - npm run dev
+- pare execução do npm
 - npm run build
 - composer dump-autoload
 - php artisan storage:link
 - php artisan migrate
 - php artisan db:seed
+- php artisan serve
 
 
 # Acesso:
