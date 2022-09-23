@@ -15,23 +15,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/modelo', function () {
     return view('layouts/modelo');
-});
+})->name('modelo');
 
-// Route::get('/settings', function () {
-//     return view('config-auth/dashboard-config');
-// })->middleware(['auth'])->name('settings');
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/', function () {
-//     return view('dashboard');
-// });
-
-// Route::get('/', function () {
-//     return view('dashboard');
-// })->middleware(['auth'])->name('dashboard');
 
 Auth::routes();
 
@@ -68,7 +58,5 @@ Route::get('lang', function () {
 })->name('lang');
 
 require __DIR__.'/auth.php';
-
-Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -78,7 +78,10 @@ return [
     'registration_deleted_successfully'=>'Registro deletado com sucesso!',
     'error_deleting_record'=>'Erro ao deletar registro!',
     'description'=>'Descrição',
-
+    'welcome'=>'Bem Vindo!',
+    'your_main_dashboard'=>'Esta é sua dashboard principal. Insira seu conteudo aqui!',
+    'your_home_screen'=>'Esta é a sua tela inicial. Personalize seu conteúdo aqui!',
+    'theme_for_model'=>'Tema para Modelo',
 
 
 

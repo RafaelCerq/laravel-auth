@@ -79,6 +79,12 @@ return [
     'registration_deleted_successfully'=>'Registration deleted successfully!',
     'error_deleting_record'=>'error deleting record!',
     'description'=>'Description',
+    'welcome'=>'Welcome!',
+    'your_main_dashboard'=>'This is your main dashboard. Insert your content here!',
+    'your_home_screen'=>'This is your home screen. Customize your content here!',
+    'theme_for_model'=>'Theme for Model',
+
+
 
 
 ];
