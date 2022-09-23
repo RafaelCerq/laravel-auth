@@ -2,10 +2,6 @@
 
 @section('content')
 
-    {{-- @php
-        $col='12';
-        $namepage = trans('system.list', ['page'=>$page]);
-    @endphp --}}
     <x-page :col="12" :namepage="trans('system.list', ['page'=>$page])">
         <x-alert :msg="session('msg')" :status="session('status')" />
 
@@ -18,5 +14,4 @@
         <x-paginate :search="$search" :list="$list" />
 
     </x-page>
-
 @endsection

@@ -44,11 +44,11 @@ class RoleController extends Controller
         $routeName = $this->route;
 
         $breadcrumb = [
-            (Object)['url'=>route('home'), 'title'=>trans('system.home')],
+            (Object)['url'=>route('settings'), 'title'=>trans('system.home')],
             (Object)['url'=>'', 'title'=>trans('system.list', ['page'=>$page])],
         ];
 
-        return view('admin.'.$routeName.'.index',compact('list','search','page','routeName','columnList', 'breadcrumb'));
+        return view('config-auth.'.$routeName.'.index',compact('list','search','page','routeName','columnList', 'breadcrumb'));
     }
 
     /**
@@ -66,12 +66,12 @@ class RoleController extends Controller
         $permissions = $this->modelPermission->all('name', 'ASC');
 
         $breadcrumb = [
-            (Object)['url'=>route('home'), 'title'=>trans('system.home')],
+            (Object)['url'=>route('settings'), 'title'=>trans('system.home')],
             (Object)['url'=>route($routeName.".index"), 'title'=>trans('system.list', ['page'=>$page])],
             (Object)['url'=>'', 'title'=>trans('system.create_crud',['page'=>$page_create])],
         ];
 
-        return view('admin.'.$routeName.'.create',compact('page', 'page_create', 'routeName', 'breadcrumb', 'permissions'));
+        return view('config-auth.'.$routeName.'.create',compact('page', 'page_create', 'routeName', 'breadcrumb', 'permissions'));
     }
 
     /**
@@ -115,7 +115,7 @@ class RoleController extends Controller
             $page2 = trans('system.role');
 
             $breadcrumb = [
-                (object)['url'=>route('home'),'title'=>trans('system.home')],
+                (object)['url'=>route('settings'),'title'=>trans('system.home')],
                 (object)['url'=>route($routeName.".index"),'title'=>trans('system.list',['page'=>$page])],
                 (object)['url'=>'','title'=>trans('system.show_crud',['page'=>$page2])],
             ];
@@ -126,7 +126,7 @@ class RoleController extends Controller
                 $delete = true;
             }
 
-            return view('admin.'.$routeName.'.show',compact('register','page','page2','routeName','breadcrumb','delete'));
+            return view('config-auth.'.$routeName.'.show',compact('register','page','page2','routeName','breadcrumb','delete'));
         }
 
         return redirect()->route($routeName.'.index');
@@ -150,12 +150,12 @@ class RoleController extends Controller
 
 
             $breadcrumb = [
-                (Object)['url'=>route('home'), 'title'=>trans('system.home')],
+                (Object)['url'=>route('settings'), 'title'=>trans('system.home')],
                 (Object)['url'=>route($routeName.".index"), 'title'=>trans('system.list', ['page'=>$page])],
                 (Object)['url'=>'', 'title'=>trans('system.edit_crud',['page'=>$page2])],
             ];
 
-            return view('admin.'.$routeName.'.edit',compact('register', 'page', 'page2', 'routeName', 'breadcrumb', 'permissions'));
+            return view('config-auth.'.$routeName.'.edit',compact('register', 'page', 'page2', 'routeName', 'breadcrumb', 'permissions'));
 
         }
 

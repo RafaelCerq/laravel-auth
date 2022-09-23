@@ -28,7 +28,7 @@
                             <img src="{{asset('images/config-auth/config-auth-2.jpg')}}" class="img-fluid" alt="this is a title">
                             <div class="overlay">
                                 <div class="buttons">
-                                <a rel="gallery" class="fancybox" href="images/config-auth/config-auth-2.jpg">{{__('system.role_list')}}</a>
+                                <a rel="gallery" class="fancybox" href="{{ route('roles.index') }}">{{__('system.role_list')}}</a>
                                 </div>
                             </div>
                         </div>
