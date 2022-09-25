@@ -2,9 +2,6 @@
 
 @section('content')
 
-    <!--=============================
-    =            Gallery            =
-    ==============================-->
     <section id="settings-form" class="gallery">
         <div class="container">
             <div class="row">
@@ -53,10 +50,6 @@
         </div>
     </section>
 
-    <!--
-    ==================================================
-    Call To Action Section Start
-    ================================================== -->
     <section id="call-to-action">
         <div class="container">
             <div class="row">
