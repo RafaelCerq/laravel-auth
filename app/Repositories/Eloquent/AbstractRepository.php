@@ -4,6 +4,7 @@ namespace App\Repositories\Eloquent;
 
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Pagination\Paginator;
 
 abstract class AbstractRepository
 {
@@ -27,6 +28,11 @@ abstract class AbstractRepository
     public function paginate(int $paginate = 10, string $column = 'id', string $order = 'ASC'):LengthAwarePaginator
     {
         return $this->model->orderBy($column,$order)->paginate($paginate);
+    }
+
+    public function simplePaginate(int $paginate = 10, string $column = 'id', string $order = 'ASC'):Paginator
+    {
+        return $this->model->orderBy($column,$order)->simplePaginate($paginate);
     }
 
     public function findWhereLike(array $columns, string $search, string $column = 'id', string $order = 'ASC'):Collection

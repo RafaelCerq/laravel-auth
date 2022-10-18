@@ -63,7 +63,6 @@ return [
     'clean'=>'Clean',
     'add'=>'Add',
     'home'=>'Home',
-    'list'=>':users List',
     'list'=>':page List',
     'create_crud'=>'Add :page',
     'edit_crud'=>'Edit :page',
@@ -83,7 +82,21 @@ return [
     'your_main_dashboard'=>'This is your main dashboard. Insert your content here!',
     'your_home_screen'=>'This is your home screen. Customize your content here!',
     'theme_for_model'=>'Theme for Model',
-
+    'solicitacao_list'=>'Requests',
+    'solicitacao'=>'Request',
+    'solicitacoes'=>'Requests',
+    'user_id'=>'User ID',
+    'open_date'=>'Open Date',
+    'date_last_change'=>'Date Last Change',
+    'situation'=>'Situation',
+    'type_request'=>'Type Request',
+    'impact'=>'Impact',
+    'resolution'=>'Resolution',
+    'situation_description'=>'(A - Open, E - Under Analysis, F - Attended, C - Canceled)',
+    'type_request_description'=> '(S - Support, I - Inovação, M - Improvement, C - Canceled, P - Problem)',
+    'impact_description'=> '(1 - Totally Stopped, 2 - Partially Stopped, 3 - Operational)',
+    'access_denied'=>'Access Denied!',
+    'showing'=>'Showing',
 
 
 

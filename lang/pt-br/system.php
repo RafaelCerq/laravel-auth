@@ -82,6 +82,21 @@ return [
     'your_main_dashboard'=>'Esta é sua dashboard principal. Insira seu conteudo aqui!',
     'your_home_screen'=>'Esta é a sua tela inicial. Personalize seu conteúdo aqui!',
     'theme_for_model'=>'Tema para Modelo',
+    'solicitacao_list'=>'Solicitações',
+    'solicitacao'=>'Solicitação',
+    'solicitacoes'=>'Solicitações',
+    'user_id'=>'ID Usuário',
+    'open_date'=>'Data Abertura',
+    'date_last_change'=>'Data Ultima Alteração',
+    'situation'=>'Situação',
+    'type_request'=>'Tipo Solicitação',
+    'impact'=>'Impacto',
+    'resolution'=>'Resolução',
+    'situation_description'=>'(A - Aberta, E - Em Análise, F - Atendida, C - Cancelada)',
+    'type_request_description'=> '(S - Suporte, I - Inovação, M - Melhoria, C - Cancelado, P - Problema)',
+    'impact_description'=> '(1 - Totalmente parado, 2 - Parcialmente Parado, 3 - Operacional)',
+    'access_denied'=>'Accesso Negado!',
+    'showing'=>'Mostrando',
 
 
 

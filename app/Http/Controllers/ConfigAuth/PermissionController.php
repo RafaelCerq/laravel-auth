@@ -36,12 +36,11 @@ class PermissionController extends Controller
           $list = $this->model->findWhereLike($this->search,$search,'id','DESC');
         }else{
           $list = $this->model->paginate($this->paginate,'id','DESC');
+        //   $list = $this->model->simplePaginate($this->paginate,'id','DESC');
         }
 
         $routeName = $this->route;
 
-        //$request->session()->flash('msg', 'Olá Alert');
-        //$request->session()->flash('status', 'success'); // success error notification
 
         $breadcrumb = [
             (Object)['url'=>route('settings'), 'title'=>trans('system.home')],

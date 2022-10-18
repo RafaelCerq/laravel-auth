@@ -10,6 +10,7 @@ use App\View\Components\Paginate;
 use App\View\Components\Search;
 use App\View\Components\Table;
 use App\View\Components\TableSite;
+use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Blade;
 
@@ -42,5 +43,11 @@ class AppServiceProvider extends ServiceProvider
         Blade::component('paginate', Paginate::class);
         Blade::component('page', Page::class);
         Blade::component('form', Form::class);
+
+        Paginator::defaultView('\vendor\pagination\tailwind');
+        Paginator::defaultSimpleView('\vendor\pagination\simple-tailwind');
+
+        // Paginator::useBootstrapFive();
+        // Paginator::useBootstrapFour();
     }
 }
