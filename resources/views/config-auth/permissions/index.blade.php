@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app', ['activePage' => 'permission', 'activeButton' => 'settings'])
 
 @section('content')
 
