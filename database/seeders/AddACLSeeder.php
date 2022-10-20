@@ -29,7 +29,6 @@ class AddACLSeeder extends Seeder
        $showUser = \App\Permission::firstOrCreate(['name'=>'show-user'],['description'=>'Visualizar registro']);
        $deleteUser = \App\Permission::firstOrCreate(['name'=>'delete-user'],['description'=>'Deletar registro']);
        $acessoACL = \App\Permission::firstOrCreate(['name'=>'acl'],['description'=>'Acesso ao ACL']);
-       $acessoACL = \App\Permission::firstOrCreate(['name'=>'manage_bets'],['description'=>'Acesso ao ACL']);
 
 
        echo "Registro de ACL criados! \n";
