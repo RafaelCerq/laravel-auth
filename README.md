@@ -1,8 +1,8 @@
 # Laravel-auth
-# PHP 8^
-# Laravel 9^
+## PHP 8^
+## Laravel 9^
 
-## 🛠️ Configurações para rodar projeto
+### 🛠️ Configurações para rodar projeto
 - composer install
 - npm install
 - copy .env.example .env
@@ -20,21 +20,21 @@
 - php artisan serve
 
 
-# Acesso:
+#### Acesso:
 - Ao executar a configuração, inicie o projeto com comando: php artisan serve
 - Utilize os dados para acessar o sistema: admin@mail.com, senha: 12345678
 
 
 
-# Processo de criação do projeto:
+#### Processo de criação do projeto:
 - composer create-project --prefer-dist laravel/laravel laravel-auth
 
-# Instalar Breeze (Caso o clone o projeto, apenas execute npm install e migrate ):
+#### Instalar Breeze (Caso o clone o projeto, apenas execute npm install e migrate ):
 - composer require laravel/breeze --dev
 - php artisan breeze:install
 - npm install
 - php artisan migrate
 - npm run dev
 
-# Criando Middleware
+#### Criando Middleware
 - php artisan make:middleware Lang
